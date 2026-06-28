@@ -46,6 +46,23 @@ export default function HomePage() {
     </SectionErrorBoundary>
   </div>
 
+  <div id="contact" data-section="contact" className="w-content-width mx-auto py-24">
+    <div className="card p-12 flex flex-col items-center text-center gap-6">
+      <h2 className="text-4xl font-bold text-foreground">Contact Us</h2>
+      <p className="text-lg text-foreground/80 max-w-2xl">
+        Ready to get your high-converting website? Reach out to us directly.
+      </p>
+      <div className="flex flex-col sm:flex-row gap-6 mt-4">
+        <a href="https://wa.me/994514944157" className="primary-button">
+          WhatsApp: +994 51 494 41 57
+        </a>
+        <a href="mailto:aydinmamedov004@gmail.com" className="secondary-button">
+          Email: aydinmamedov004@gmail.com
+        </a>
+      </div>
+    </div>
+  </div>
+
   <div id="about" data-section="about">
     <SectionErrorBoundary name="about">
           <AboutTestimonial
