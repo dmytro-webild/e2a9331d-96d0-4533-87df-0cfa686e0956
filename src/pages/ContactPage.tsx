@@ -12,7 +12,7 @@ export default function ContactPage() {
       text="Ready to launch your business online? Tell me about your business and we'll start your project today."
       primaryButton={{
         text: "WhatsApp Us",
-        href: "https://wa.me/yournumber",
+        href: "https://wa.me/994514944157",
       }}
       secondaryButton={{
         text: "Send Email",
