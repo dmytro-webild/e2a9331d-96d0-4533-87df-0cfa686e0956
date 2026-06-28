@@ -14,7 +14,7 @@ export default function PricingPage() {
       plans={[
         {
           tag: "Launch",
-          price: "$999",
+          price: "$259",
           description: "Perfect for startups and local shops.",
           features: [
             "1-5 Pages",
