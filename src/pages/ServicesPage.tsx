@@ -62,7 +62,7 @@ export default function ServicesPage() {
       plans={[
         {
           tag: "Starter",
-          price: "$499",
+          price: "$199",
           description: "Basic presence",
           features: [
             "1 page",
