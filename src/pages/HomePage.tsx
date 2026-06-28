@@ -53,7 +53,7 @@ export default function HomePage() {
         Ready to get your high-converting website? Reach out to us directly.
       </p>
       <div className="flex flex-col sm:flex-row gap-6 mt-4">
-        <a href="https://wa.me/994514944157" className="primary-button">
+        <a href="https://wa.me/994514944157" target="_blank" rel="noopener noreferrer" className="primary-button">
           WhatsApp: +994 51 494 41 57
         </a>
         <a href="mailto:aydinmamedov004@gmail.com" className="secondary-button">
