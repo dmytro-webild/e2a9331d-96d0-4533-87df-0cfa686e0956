@@ -65,7 +65,7 @@ export default function PricingPage() {
         },
         {
           tag: "Pro",
-          price: "$1999",
+          price: "$399",
           description: "Advanced",
           features: [
             "Analytics",
