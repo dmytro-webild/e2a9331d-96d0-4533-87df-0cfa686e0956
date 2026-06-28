@@ -16,7 +16,7 @@ export default function ContactPage() {
       }}
       secondaryButton={{
         text: "Send Email",
-        href: "mailto:aydinmamedov",
+        href: "mailto:aydinmamedov@gmail.com",
       }}
     />
     </SectionErrorBoundary>
