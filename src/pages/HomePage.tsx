@@ -1,173 +1,30 @@
-import AboutTestimonial from '@/components/sections/about/AboutTestimonial';
-import HeroBillboardTiltedCarousel from '@/components/sections/hero/HeroBillboardTiltedCarousel';
-import MetricsMediaCards from '@/components/sections/metrics/MetricsMediaCards';
-import SocialProofMarquee from '@/components/sections/social-proof/SocialProofMarquee';
-import TestimonialRatingCards from '@/components/sections/testimonial/TestimonialRatingCards';
-import SectionErrorBoundary from "@/components/ui/SectionErrorBoundary";
+// AUTO-GENERATED shell by per-section-migrate.
+// Section bodies live in ./<PageBase>/sections/<X>.tsx. Edit the section
+// files directly. Non-block content (wrappers, non-inlinable sections) is
+// preserved inline; extracted section blocks become <XSection/> refs.
 
-export default function HomePage() {
+import React from 'react';
+import HeroSection from './HomePage/sections/Hero';
+import ContactSection from './HomePage/sections/Contact';
+import AboutSection from './HomePage/sections/About';
+import MetricsSection from './HomePage/sections/Metrics';
+import TestimonialsSection from './HomePage/sections/Testimonials';
+import SocialProofSection from './HomePage/sections/SocialProof';
+
+export default function HomePage(): React.JSX.Element {
   return (
-    <>
-  <div id="hero" data-section="hero">
-    <SectionErrorBoundary name="hero">
-          <HeroBillboardTiltedCarousel
-      tag="Fast, Professional, Affordable"
-      title="Professional websites for a fraction of agency costs"
-      description="Stop overpaying for agencies. Get your high-converting business website launched in days, not months. High performance, mobile-ready, and optimized for growth."
-      primaryButton={{
-        text: "Get Your Website Today",
-        href: "/contact",
-      }}
-      secondaryButton={{
-        text: "View Our Portfolio",
-        href: "/portfolio",
-      }}
-      items={[
-        {
-          imageSrc: "http://img.b2bpic.net/free-photo/modern-smartphone-blank-screen-split-background_9975-133781.jpg",
-        },
-        {
-          imageSrc: "http://img.b2bpic.net/free-photo/programming-background-collage_23-2149901782.jpg",
-        },
-        {
-          imageSrc: "http://img.b2bpic.net/free-photo/top-view-internet-communication-network_23-2148779266.jpg",
-        },
-        {
-          imageSrc: "http://img.b2bpic.net/free-photo/website-development-links-seo-webinar-cyberspace-concept_53876-120953.jpg",
-        },
-        {
-          imageSrc: "http://img.b2bpic.net/free-photo/top-view-internet-communication-network-with-laptop_23-2148779281.jpg",
-        },
-        {
-          imageSrc: "http://img.b2bpic.net/free-photo/3d-render-abstract-particle-design-with-shallow-depth-field_1048-14034.jpg",
-        },
-      ]}
-    />
-    </SectionErrorBoundary>
-  </div>
+<>
+  <HeroSection />
 
-  <div id="contact" data-section="contact" className="w-content-width mx-auto py-24">
-    <div className="card p-12 flex flex-col items-center text-center gap-6">
-      <h2 className="text-4xl font-bold text-foreground">Contact Us</h2>
-      <p className="text-lg text-foreground/80 max-w-2xl">
-        Ready to get your high-converting website? Reach out to us directly.
-      </p>
-      <div className="flex flex-col sm:flex-row gap-6 mt-4">
-        <a href="https://wa.me/994514944157" target="_blank" rel="noopener noreferrer" className="primary-button">
-          WhatsApp: +994 51 494 41 57
-        </a>
-        <a href="mailto:aydinmamedov004@gmail.com" className="secondary-button">
-          Email: aydinmamedov004@gmail.com
-        </a>
-      </div>
-    </div>
-  </div>
+  <ContactSection />
 
-  <div id="about" data-section="about">
-    <SectionErrorBoundary name="about">
-          <AboutTestimonial
-      tag="Why Us"
-      quote="Small businesses need a digital home that works as hard as they do—without the massive agency overhead."
-      author="The WebLaunch Team"
-      role="Mission Statement"
-      imageSrc="http://img.b2bpic.net/free-photo/young-man-showing-thumb-up-white-background_1149-57.jpg"
-    />
-    </SectionErrorBoundary>
-  </div>
+  <AboutSection />
 
-  <div id="metrics" data-section="metrics">
-    <SectionErrorBoundary name="metrics">
-          <MetricsMediaCards
-      tag="Our Values"
-      title="Building your success, efficiently"
-      description="We cut out the bloat to give you a premium website that turns visitors into customers."
-      metrics={[
-        {
-          value: "Affordable",
-          title: "Fair Pricing",
-          description: "No hidden agency markups. You pay for value, not office rent.",
-          imageSrc: "http://img.b2bpic.net/free-photo/logistics-concept-device-screen_53876-124875.jpg",
-        },
-        {
-          value: "Fast",
-          title: "Rapid Deployment",
-          description: "Get live in record time. We prioritize your time-to-market.",
-          imageSrc: "http://img.b2bpic.net/free-photo/innovation-development-rocket-graphic-concept_53876-120019.jpg",
-        },
-        {
-          value: "Pro",
-          title: "Quality Assured",
-          description: "Professional design standards that help you stand out from the noise.",
-          imageSrc: "http://img.b2bpic.net/free-photo/architect-doing-okay-sign_1149-1825.jpg",
-        },
-      ]}
-    />
-    </SectionErrorBoundary>
-  </div>
+  <MetricsSection />
 
-  <div id="testimonials" data-section="testimonials">
-    <SectionErrorBoundary name="testimonials">
-          <TestimonialRatingCards
-      tag="Our Clients"
-      title="What our customers say"
-      description="We've helped dozens of small business owners find their voice online."
-      testimonials={[
-        {
-          name: "Sarah J.",
-          role: "Restaurant Owner",
-          quote: "Finally, a service that doesn't treat you like a cash cow. Affordable and beautiful.",
-          rating: 5,
-          imageSrc: "http://img.b2bpic.net/free-photo/portrait-woman-smiling-kitchen_107420-12357.jpg",
-        },
-        {
-          name: "Michael K.",
-          role: "Realtor",
-          quote: "I got my site in 3 days. My inquiry rate has already doubled.",
-          rating: 5,
-          imageSrc: "http://img.b2bpic.net/free-photo/happy-friendly-mature-business-man-wearing-jacket-glasses-posing-indoors-looking-camera_74855-9997.jpg",
-        },
-        {
-          name: "Elena R.",
-          role: "Wellness Coach",
-          quote: "Fast, friendly, and they actually understood what I needed. Highly recommend.",
-          rating: 5,
-          imageSrc: "http://img.b2bpic.net/free-photo/portrait-smiling-senior-man-holding-smart-phone_23-2147935571.jpg",
-        },
-        {
-          name: "David T.",
-          role: "Contractor",
-          quote: "Saved me over $5k vs what an agency quoted. Extremely happy with the results.",
-          rating: 5,
-          imageSrc: "http://img.b2bpic.net/free-photo/businessman-smiling-looking-camera_23-2148112827.jpg",
-        },
-        {
-          name: "Maria L.",
-          role: "Retailer",
-          quote: "A truly modern approach to web development. Easy process.",
-          rating: 5,
-          imageSrc: "http://img.b2bpic.net/free-photo/mature-business-manager-office_1098-21368.jpg",
-        },
-      ]}
-    />
-    </SectionErrorBoundary>
-  </div>
+  <TestimonialsSection />
 
-  <div id="social-proof" data-section="social-proof">
-    <SectionErrorBoundary name="social-proof">
-          <SocialProofMarquee
-      tag="Trusted By"
-      title="Industry leaders choose us"
-      description="We are proud to work with these forward-thinking brands."
-      names={[
-        "Alpha Corp",
-        "Beta Solutions",
-        "Gamma Ventures",
-        "Delta Innovations",
-        "Epsilon Systems",
-      ]}
-    />
-    </SectionErrorBoundary>
-  </div>
+  <SocialProofSection />
     </>
   );
 }
