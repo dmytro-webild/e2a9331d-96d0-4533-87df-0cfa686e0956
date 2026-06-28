@@ -56,7 +56,7 @@ export default function PricingPage() {
       plans={[
         {
           tag: "Launch",
-          price: "$999",
+          price: "$259",
           description: "Standard",
           features: [
             "Hosting",
