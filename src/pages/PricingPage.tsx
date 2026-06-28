@@ -29,7 +29,7 @@ export default function PricingPage() {
         },
         {
           tag: "Growth",
-          price: "$1,999",
+          price: "$399",
           description: "Best for scaling businesses.",
           features: [
             "10+ Pages",
